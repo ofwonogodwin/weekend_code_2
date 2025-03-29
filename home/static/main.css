@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(198, 205, 218);
+}
+header{
+    background-color: rgb(7, 18, 37);
+
+}
+a{
+    font-size: 35px;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 35px;
+
+}
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}

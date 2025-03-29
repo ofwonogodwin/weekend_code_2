@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>Pampala</title>
+</head>
+<body>
+    <header>
+        <a href="{% url 'homepage' %}">Home</a>
+        <a href="{% url 'aboutpage' %}">About</a>
+        <a href="{% url 'gallerypage' %}">Gallery</a>
+        <a href="{% url 'contactpage' %}">Contact</a>
+        <img src="{% static 'images/ofwono.jpeg' %}" alt="profile" class="image">
+    </header>
+</body>
+</html>
+
+
+{% block content %}
+    
+{% endblock content %}
+    

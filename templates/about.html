@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+    <h1>Our current Members</h1>
+    
+    {% for item in all %}
+        Name  :{{item.fname}} {{item.lname}}<br/>
+        Email :{{item.email}}<br/>
+        Age   :{{item.age}}<br/>
+
+
+    {% endfor %}
+        
+{% endblock content %}
+    
