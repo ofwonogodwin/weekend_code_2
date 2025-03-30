@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from.models import Members
+from.forms import MemberForm
 
 # Create your views here.
 def home(request):
@@ -13,4 +14,7 @@ def gallery(request):
     return render(request,'gallery.html')
 
 def contact(request):
-    return render(request,'contact.html')
+    if request.method =='post':
+        form =MemberForm(request.post or None)
+    else:
+        return render(request,'contact.html')
